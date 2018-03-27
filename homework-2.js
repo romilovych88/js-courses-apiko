@@ -1,5 +1,5 @@
 const React = {
-  createElement: (tag, props = [], children = []) => {
+  createElement: (tag, props = {}, children = []) => {
     const element = document.createElement(tag);
     
     Object.keys(props).forEach(key => {
